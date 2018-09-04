@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FSWD CSS3: Flexbox (25)</title>
+    <style>
+div.main {
+  background: rgba(240,240,250, 1);
+  min-height: 200pt;
+}
+
+.flex1 { 
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+}
+
+.flex1a { 
+  display : flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex2 { 
+  display : flex;
+  justify-content: space-between;
+}
+
+.flex3 { 
+  display : flex;
+  justify-content: space-around;
+}
+
+.flex4 { 
+  display : flex;
+  flex-flow: column;
+
+}
+
+
+/* color & stylings */
+
+h2 {
+  padding-top: 20pt;
+}
+
+header { 
+  background-color : rgba(200,200,200, 1); 
+}
+article { 
+  background-color : rgba(200,200,200, .7); 
+}
+aside {
+  background-color : rgba(200,200,200, .45); 
+}
+footer  { 
+  background-color : rgba(200,200,200, .2); 
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <h2>example with no flex layout (default)</h2>
+    <div  class="main">
+      <header>
+        <p>header info here</p>
+      </header>
+      <article>
+        <h3>No flex: default layout </h3>
+        <div>
+          <p>Nulla facilisi. </p>
+          <p>Mauris vulputate tellus sapien.</p>
+        </div>
+      </article>
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </aside>
+      <footer><p>Copyright Footer</p>
+      </footer>
+    </div>
+
+    <h2>FLEX1: center & wrap</h2>
+    <div  class="main flex1">
+      <header>
+        <p>header info here</p>
+      </header>
+      <article>
+        <h3>flex & justify-content: center;</h3>
+        <div>
+          <p>Nulla facilisi. </p>
+          <p>Mauris vulputate tellus sapien.</p>
+        </div>
+      </article>
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </aside>
+      <footer><p>Copyright Footer</p>
+      </footer>
+    </div>
+
+    <h2>FLEX1A: justify-content: flex-end; & align-items: flex-end;</h2>
+    <div  class="main flex1a">
+      <header>
+        <p>header info here</p>
+      </header>
+      <article>
+        <h3>flex & justify-content: center;</h3>
+        <div>
+          <p>Nulla facilisi. </p>
+          <p>Mauris vulputate tellus sapien.</p>
+        </div>
+      </article>
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </aside>
+      <footer><p>Copyright Footer</p>
+      </footer>
+    </div>
+
+    <h2>FLEX2: justify-content: space-between;</h2>
+    <div  class="main flex2">
+      <header>
+        <p>header info here</p>
+      </header>
+      <article>
+        <h3>flex & justify-content: center;</h3>
+        <div>
+          <p>Nulla facilisi. </p>
+          <p>Mauris vulputate tellus sapien.</p>
+        </div>
+      </article>
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </aside>
+      <footer><p>Copyright Footer</p>
+      </footer>
+    </div>
+
+    <h2>FLEX3: justify-content: space-between;</h2>
+    <div  class="main flex3">
+      <header>
+        <p>header info here</p>
+      </header>
+      <article>
+        <h3>flex & justify-content: center;</h3>
+        <div>
+          <p>Nulla facilisi. </p>
+          <p>Mauris vulputate tellus sapien.</p>
+        </div>
+      </article>
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </aside>
+      <footer><p>Copyright Footer</p>
+      </footer>
+    </div>
+
+    <h2>FLEX4: flex-flow: column;</h2>
+    <div  class="main flex4">
+      <header>
+        <p>header info here</p>
+      </header>
+      <article>
+        <h3>flex & justify-content: center;</h3>
+        <div>
+          <p>Nulla facilisi. </p>
+          <p>Mauris vulputate tellus sapien.</p>
+        </div>
+      </article>
+      <aside>
+        <a href="#">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </aside>
+      <footer><p>Copyright Footer</p>
+      </footer>
+    </div>
+
+    <p>Try to change the width of the viewport to see the flexbox in action</p>
+
+  </body>
+</html>

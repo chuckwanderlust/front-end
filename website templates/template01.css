@@ -1,0 +1,41 @@
+ *{
+ 	margin: 0 auto;
+
+ }
+
+ .titlesection{
+ 	display: flex;
+ 	flex-flow: row;
+ }
+
+ .ad{
+ 	background-color: lightblue;
+ 	width: 200px;
+ 	height: 100px;
+ }
+
+
+ #lheadlogo{
+ 	display: flex;
+ 	justify-content: center;
+ 	
+ 	
+ }
+
+ #logo{
+ 	width: 90%;
+ 	justify-content: center;
+ 	padding-left: 11%;
+
+ }
+
+ul{
+	display: flex;
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 0.8em;
+	width: 80%;
+
+}
+
+

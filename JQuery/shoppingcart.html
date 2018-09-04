@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		
+		*{
+			font-family: Arial;
+		}
+
+		#header{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			width: 100%;
+			margin: auto;
+			background-color: grey;
+			color: white;
+			font-size: 2em;
+			
+		}
+
+		
+		#productplacement{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			padding-top: 5%;
+		}
+
+		.title{
+			display: flex;
+			justify-content: center;
+			font-weight: bold;
+		}
+
+		.cart{
+			display: flex;
+			justify-content: center;
+			padding-top: 3%;
+			font-size: 1.5em;
+		}
+		#itemselect{
+			font-size: 1em;
+		}
+
+		#prices{
+			display: flex;
+			justify-content: center;
+		}
+
+		.addtocart{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 35%;
+		}
+
+	</style>
+	
+	<title>Shopping Cart</title>
+</head>
+<body>
+
+
+<header>
+		
+	<div id="header">Fleetwood Mac Albums</div>
+
+</header>
+							<!-- products -->
+	<div id="productplacement">
+	<div class="products" id="item1"><img src="tusk.jpg" width="300"><span class="title">Tusk</span>
+	<p id="prices" value="17.99">EUR 17.99</p>
+	<button onclick="addCart()" class="addtocart">Add to Cart</button>	
+	</div>
+	<div class="products" id="item2"><img src="fleetwoodmac.jpg" width="300"><span class="title">Fleetwood Mac</span>
+	<p id="prices" value="9.99">EUR 9.99</p>
+	<button onclick="addCart()" class="addtocart">Add to Cart</button>	
+	</div>
+	<div class="products" id="item3"><img src="rumours.png" width="300"><span class="title">Rumours</span>
+	<p id="prices" value="9.99">EUR 9.99</p>
+	<button onclick="addCart()" class="addtocart">Add to Cart</button>	
+	</div>
+	</div>
+
+	<!--shopping cart-->
+
+	
+	<p class="cart" id="itemselect">Selected items = 0</p>
+	<p class="cart" id="totalprice">Total Price = 0 </p>
+
+
+	<script>
+
+	
+
+	</script>
+	
+</body>
+</html>

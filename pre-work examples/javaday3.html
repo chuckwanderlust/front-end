@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java pre-work day 3</title>
+</head>
+<body>
+	<style type="text/css">
+	.hot{
+		color: red;
+	}
+	.nature{
+		color: green;
+	}
+
+</style>
+
+
+<ul>
+	<li class="nature">Item 1</li>
+	<li class="hot">Item 2</li>
+	<li class="hot">Item 3</li>
+	<li>Item 4</li>
+</ul>
+
+<!--<script>
+document.getElementByID("demo").innerHTML = "Hello world";
+document.querySelector("li.hot").innerHTML = "affected item";
+document.getElementsByClassName("li.hot")[1].innerHTML = "affected item";
+
+</script>-->
+
+ <button onclick="myFunction()">click me</button>
+    <p id="demo"></p>
+ 
+    <script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+
+    
+var i = 1;
+var msg = '';
+while (i < 10) {
+    msg = i + ' x 5 = ' + (i * 5) + '<br/>';
+    i++;
+    document.write(msg);
+}
+    </script>
+
+</body>
+</html>

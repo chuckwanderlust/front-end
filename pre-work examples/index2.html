@@ -1,0 +1,94 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<p id="placeholder"></p>
+
+	<script>
+		
+		var a = 5;
+		var b = 3;
+
+		function product() {
+			return a * b;
+		}
+
+		console.log(product());
+
+		function sum(x,y) {
+			return x + y;
+
+
+		}
+		console.log(sum(15,25));
+		console.log(sum(3,97));
+		//document.write(sum(3,97));
+
+		document.getElementByID("placeholder").innerHTML = sum(5,15);
+
+		(function){
+			document.write("Hello Everyone");
+		}());
+
+</script>
+
+
+<script>
+    function getResult(numberOne, numberTwo, numberThree) {
+        var sum = numberOne + numberTwo + numberThree;
+        var multiply = numberOne * numberTwo * numberThree;
+        var result = [sum, multiply];
+        return result;
+}
+document.write(getResult(2, 7, 5)[0]);
+document.write("<br/>");
+document.write(getResult(2, 7, 5)[1]);
+        </script>
+<script>
+
+
+var msg = '<h2>Browser window</h2><p>width: ' + window.innerWidth + '</p>';
+document.write(msg);
+
+
+var msg = '<h2>Browser window</h2><p>url: ' + document.URL + '</p>';
+document.write(msg);
+
+</script>
+
+</body>
+</html>
+
+	</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+
+</head>
+<body>
+    <p id='footer'>URL</p>
+    <script>
+    var msg = '<h2>Page title</h2><p> ' + document.URL + '</p>';
+    var el = document.getElementById('footer');
+    el.innerHTML = msg;
+
+
+var today = new Date();
+document.write(today);
+    </script>
+</body>
+</html>
+
+
+<!--
+//getFullYear()

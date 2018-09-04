@@ -1,0 +1,31 @@
+/*body {
+ 
+background-image: 
+ url("http://www.codefactory.academy/examples/css3/images/codepen/polygonal-texture.jpg");
+ background-repeat: repeat-x;
+ background-position: center bottom;
+}
+
+*/
+
+/*
+body {
+  width: 800px;
+  height: 430px;
+  background-image: url("https://codefactory.academy/examples/css3/images/codepen/sheep.png"),
+   url("https://codefactory.academy/examples/css3/images/codepen/background-s.jpg");
+  background-position: center bottom, left top;
+  background-repeat: no-repeat;
+}
+
+*/
+
+.news {
+  		background: blue; /* fallback no 1 */
+  		background-image: 
+  url("http://www.codefactory.academy/examples/css3/images/codepen/car.svg");
+   /* fallback no 2 */
+  background-image: 
+  url("http://www.codefactory.academy/examples/css3/images/codepen/car.svg"), 
+  linear-gradient(pink, green); /* W3C */
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FSWD CSS: Darth Vader (20a)</title>
+    <style>
+    body {
+      background: #fff;
+      color: #000;
+    }
+    
+  h1, p {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 0;
+  }
+    
+    #vader {
+      height: 600px;
+      width: 631px;
+      margin: 50px auto;
+      position: relative;
+    }
+    
+    #helmet {
+      width: 335px;
+      height: 268px;      
+      background-color: #000;
+      position: absolute;
+      left: 145px;
+      top: 15px;
+      -webkit-border-radius: 200px 200px 0 0;
+      -moz-border-radius: 200px 200px 0 0;
+      border-radius: 200px 200px 0 0;
+      z-index: 0;
+    }
+    
+    #helMid {
+      width: 25px;
+      height: 268px;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      position: absolute;
+      left: 155px;
+    }
+    
+    #bigLeft {
+      width: 140px;
+      height: 275px;
+      background-color: #000;
+      border-top: 5px solid #fff;
+      border-left: 5px solid #fff;
+      position: absolute;
+      top: 231px;
+      left: 129px;
+      z-index: 1;
+      -webkit-border-top-left-radius: 75px;
+      -webkit-border-bottom-right-radius: 137px;
+      -moz-border-radius-topleft: 75px;
+      -moz-border-radius-bottomright: 137px;
+      border-top-left-radius: 75px;
+      border-bottom-right-radius: 137px;
+      -webkit-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+    }
+    
+    .eye {
+      height: 70px;
+      width: 100px;
+      background-color: #fff;
+      position: absolute;
+      z-index: 5;
+      top: 242px;
+      -webkit-border-radius: 123px 100px;
+      -moz-border-radius: 123px 100px;
+      border-radius: 123px 100px;
+    }
+    
+    #leftEye {
+      left: 196px;
+      -webkit-transform: rotate(15deg);
+      -moz-transform: rotate(15deg);
+      -o-transform: rotate(15deg);
+    }
+    
+    #rightEye {
+      right: 196px;
+      -webkit-transform: rotate(-15deg);  
+      -moz-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+    }
+    
+    .bag {
+      color: #fff;
+      font-family: Times, serif;
+      font-size: 100px;
+      position: absolute;
+      top: 270px;
+      z-index: 20;
+    }
+    
+    #leftBag {
+      left: 210px;
+      -webkit-transform: rotate(-80deg);
+      -moz-transform: rotate(-80deg);
+      -o-transform: rotate(-80deg);
+    }
+    
+    #rightBag {
+      right: 210px;
+      -webkit-transform: rotate(80deg);
+      -moz-transform: rotate(80deg);
+      -o-transform: rotate(80deg);
+    }
+    
+    #bigRight {
+      width: 140px;
+      height: 275px;
+      background-color: #000;
+      border-top: 5px solid #fff;
+      border-right: 5px solid #fff;
+      position: absolute;
+      top: 231px;
+      right: 129px;
+      z-index: 1;
+      -webkit-border-top-right-radius: 75px;
+      -webkit-border-bottom-left-radius: 137px;     
+      -webkit-transform: rotate(-20deg);
+      -moz-border-radius-topright: 75px;
+      -moz-border-radius-bottomleft: 137px;     
+      -moz-transform: rotate(-20deg);
+      border-top-right-radius: 75px;
+      border-bottom-left-radius: 137px;     
+      -o-transform: rotate(-20deg);
+    }
+    
+    .cheek {
+      height: 110px;
+      width: 120px;
+      background-color: #000;
+      position: absolute;
+      top: 320px;
+      z-index: 2;
+      border-bottom: 5px solid #fff;
+      
+    }
+    
+    #leftCheek {
+      left: 173px;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      border-left: 5px solid #fff;
+    }
+    
+    #rightCheek {
+      right: 173px;
+      -webkit-transform: rotate(44deg);
+      -moz-transform: rotate(44deg);
+      -o-transform: rotate(44deg);
+      border-right: 5px solid #fff;
+    }
+    
+    
+    
+    .thing {
+      height: 270px;
+      width: 50px;
+      position: absolute;
+      top: 190px;
+      background-color: #000;
+    }
+    
+    #leftThing {
+      -webkit-transform: rotate(25deg);
+      -webkit-border-bottom-right-radius: 20px;
+      -webkit-border-bottom-left-radius: 150px;
+      -moz-transform: rotate(25deg);
+      -moz-border-radius-bottomright: 20px;
+      -moz-border-radius-bottomleft: 150px;
+      -o-transform: rotate(25deg);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 150px;
+      left: -50px;      
+    }
+    
+    #rightThing {
+      -webkit-transform: rotate(-25deg);
+      -webkit-border-bottom-left-radius: 20px;
+      -webkit-border-bottom-right-radius: 150px;
+      -moz-transform: rotate(-25deg);
+      -moz-border-radius-bottomleft: 20px;
+      -moz-border-radius-bottomright: 150px;
+      -o-transform: rotate(-25deg);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 150px;
+      right: -50px;
+    }
+    
+    #midFace {
+      width: 260px;
+      height: 100px;
+      background-color: #000;
+      position: absolute;
+      left: 185px;
+      top: 280px;
+    }
+    
+    #roundStuff {
+      position: absolute;
+      top: 275px;
+      left: 302px;
+      z-index: 50;
+    }
+    
+    .roundThing {
+      height: 5px;
+      width: 25px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #fff;
+      margin-bottom: 2px; 
+    }
+    
+    #grill {
+      width: 170px;
+      height: 130px;
+      position: absolute;
+      left: 252px;
+      top: 390px;
+      padding-bottom: 10px;
+    }
+    
+    #nose {
+      height: 25px;
+      width: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      position: absolute;
+      left: 303px;
+      top: 360px;
+      background: #fff;
+      z-index: 4;
+    }
+    
+    .upright {
+      width: 14px;
+      height: 86px;
+      float: left;
+      margin-left: 14px;
+      background-color: #000;
+      position: relative;
+      
+    }
+    
+    .upright:first-child {
+      margin-left: 0;
+      height: 31px;
+      top: 46px;
+      -webkit-transform: matrix(1, -1.12, 0, 1, 0, 0);
+      -moz-transform: matrix(1, -1.12, 0, 1, 0, 0);
+      -o-transform: matrix(1, -1.12, 0, 1, 0, 0);
+    }
+    
+    .upright:nth-child(3) {
+      height: 60px;
+      -webkit-transform: matrix(1, -1.12, 0, 1, 0, 0);
+      -moz-transform: matrix(1, -1.12, 0, 1, 0, 0);
+      -o-transform: matrix(1, -1.12, 0, 1, 0, 0);
+      top: 19px;
+    }
+    
+    .upright:nth-child(6) {
+      height: 60px;
+      -webkit-transform: matrix(1, 1.12, 0, 1, 0, 0);
+      -moz-transform: matrix(1, 1.12, 0, 1, 0, 0);
+      -o-transform: matrix(1, 1.12, 0, 1, 0, 0);
+      top: 19px;
+    }
+
+    .upright:nth-child(8) {
+      height: 31px;
+      -webkit-transform: matrix(1, 1.12, 0, 1, 0, 0);
+      -moz-transform: matrix(1, 1.12, 0, 1, 0, 0);
+      -o-transform: matrix(1, 1.12, 0, 1, 0, 0);
+      top: 46px;
+    }
+    
+    
+    .bottom {
+      height: 0;
+      width: 0;
+      border-top: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-right: 7px solid black;
+      border-bottom: 10px solid black;
+      position: absolute;
+      top: 53px; 
+    }
+    
+    .b3, .b4 {
+      border-right: 7px solid transparent;
+      border-left: 7px solid black;   
+    }
+    
+    .b1 {
+      left: 0;
+      -moz-transform: translateX(-1px)
+    }
+    
+    .b2 {
+      left: 28px;
+    }
+    
+    .b3 {
+      left: 84px;
+    }
+    
+    .b4 {
+      left: 112px;
+    }
+
+    
+    #bottomLine {
+      height: 10px;
+      width: 145px;
+      background-color: #000;
+      position: absolute;
+      bottom: 38px;
+      left: -8px;
+    }
+    
+    #chin {
+      width: 0;
+      height: 0;
+      border-top: 45px solid black;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      position: absolute;
+      top: 500px;
+      left: 245px;
+    }
+    
+    .cover {
+      background-color: #fff;
+      height: 100px;
+      width: 165px;
+      position: absolute;
+      top: 430px;
+      z-index: 15;
+      -webkit-border-top-left-radius: 78px;
+      -webkit-border-top-right-radius: 78px;
+      -moz-border-radius-topleft: 78px;
+      -moz-border-radius-topright: 78px;
+      border-top-left-radius: 78px;
+      border-top-right-radius: 78px;
+      
+    }
+    
+    #coverLeft {
+      left: 74px;
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+    }
+    
+    #coverRight {
+      right: 74px;
+      -webkit-transform: rotate(15deg);
+      -moz-transform: rotate(15deg);
+      -o-transform: rotate(15deg);
+      
+    }
+    
+    .line {
+      color: #000;
+      font-size: 90px;
+      font-family: arial, sans-serif;     
+      position: absolute; 
+      top: 400px;
+      z-index: 40;
+    }
+    
+    #leftDown {
+      left: 203px;
+      -webkit-transform: rotate(-28deg) translateX(-1px);
+      -moz-transform: rotate(-28deg);
+      -o-transform: rotate(-28deg) translateX(-2px);
+    }
+    
+    #rightDown {
+      right: 204px;
+      -webkit-transform: rotate(28deg) translateX(1px);
+      -moz-transform: rotate(28deg) translate(1px);
+      -o-transform: rotate(28deg) translate(1px);
+    }
+
+
+
+
+    
+    </style>
+  </head>
+  <body class="news">
+    <div >
+      <h1>FSWD CSS: Darth Vader (20a)</h1>
+      <p>today is such a lovely day!</p>
+      <p>source: https://kristriplett.com/tinker/vader.html</p>
+
+      <div id="vader">
+        <div id="helmet">
+          <div id="helMid"></div>
+          <div id="leftThing" class="thing"></div>
+          <div id="rightThing" class="thing"></div>
+        </div>
+        <div id="leftEye" class="eye"></div>
+        <div id="rightEye" class="eye"></div>	
+        <div id="leftBag" class="bag">(</div>	
+        <div id="rightBag" class="bag">)</div>
+        <div id="bigLeft"></div>
+        <div id="bigRight"></div>
+        <div id="leftCheek" class="cheek"></div>
+        <div id="rightCheek" class="cheek"></div>
+        <div id="midFace"></div>
+        <div id="roundStuff">
+          <div class="roundThing"></div>
+          <div class="roundThing"></div>
+          <div class="roundThing"></div>		
+        </div>		
+        <div id="nose"></div>
+        <div id="grill">
+          <div class="upright"></div><p class="bottom b1"></p>
+          <div class="upright"></div><p class="bottom b2"></p>
+          <div class="upright"></div>
+          <div class="upright"></div><p class="bottom b3"></p>
+          <div class="upright"></div><p class="bottom b4"></p>
+          <div id="bottomLine"></div>
+        </div>
+        <div id="chin"></div>
+        <div id="coverLeft" class="cover"></div>
+        <div id="coverRight" class="cover"></div>
+        <div id="leftDown" class="line">\</div>
+        <div id="rightDown" class="line">/</div>	
+      </div>
+
+      </body>
+    </html>

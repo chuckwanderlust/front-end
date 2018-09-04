@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script >
+		
+		var username = "John";
+		var password = "12345";
+		if (username == "John" && password == '12345'){
+			console.log("you are logged in");
+
+		} else {
+			console.log("you are not logged in")
+		}
+
+		//-----if/else if there are <4 arguments, otherwise switch
+
+	
+		fruit = "banana"	
+	
+	switch (fruit) {
+	    case 'orange ':
+	        title = 'Vit C ';
+	        break;
+	    case 'lemon':
+	        title = ' vit E ';
+	        break;
+	    
+	    default:
+	        title = 'no fruit selected';
+	        break;
+	}
+
+	console.log(fruit);
+
+
+	//------use do/while if you need the loop to output at least once
+
+
+	var i=0;
+	while (i<10){
+		console.log(i);
+		i++;
+	}
+
+
+
+	var i = 12;
+	var msg = '';
+	do{console.log(i); i++;}
+	while (i < 10) {
+	    msg = i + ' x 5 = ' + (i * 5) + '<br/>';
+	    i++;
+	    document.write(msg);
+	}
+
+	//-------------
+
+	for ( var i = 0; i>=0; i--){
+		Things[i]
+	}
+	
+	//--------------onclick example
+
+	</script>
+	<input type="submit" onclick="sayHello()">
+	<script>
+		function sayHello(){
+			console.log("Hello from the console");
+		}
+
+	</script>
+
+	<input type="submit" id="username" value="Username">
+
+	<script>
+		
+		function printUsername(){
+			console.log("Print the Username");
+		}
+
+		var button2= document.getElementByID("username");
+		button2.addEventListener("click", printUsername, false);
+	</script>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+   
+    <div id="result">Sum of the numbers is:
+		<form name="sum">
+			<input type="text" name="number_one" value="0">
+			<input type="text" name="number_two" value="0">
+			<input type="submit" value="submit" onClick="return submitData()">
+		</form>
+	</div>
+	<script>
+		function submitData() {
+			var number_one = document.forms["sum"]["number_one"].value;
+			var number_two = document.forms["sum"]["number_two"].value;
+ 
+			var sum = Number(number_one) + Number(number_two);
+			var result = document.getElementById('result');
+ 
+			result.innerHTML = '<h2>The sum of the numbers is ' + sum + ' </h2>';
+		}
+
+
+	</script>
+    <hh3>Nmber of available rooms based on the objects values</h3>
+    <h1 id="hotelName"></h1>
+    <h2 id="rooms"></h2>
+
+    <script>
+    var hotel = {
+        name: 'Quay',
+        rooms: 40,
+        booked: 25,
+
+        checkAvailability: function() {
+            return ("Number of free rooms is: " + (this.rooms - this.booked));
+        }
+    }
+
+    // Print the Hotel name
+    var hotel_name = document.getElementById("hotelName");
+    hotel_name.textContent = hotel.name;
+
+    // Call the checkAvailability()
+    var print_free_rooms = document.getElementById("rooms");
+    print_free_rooms.textContent = hotel.checkAvailability();
+
+    </script>
+   
+</body>
+</html>	
+	</script>
+</body>
+</html>

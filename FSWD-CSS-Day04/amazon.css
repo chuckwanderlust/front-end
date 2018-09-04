@@ -1,0 +1,118 @@
+*{
+	margin: 0 auto;
+}
+
+header{
+	background-color: #232F3E;
+	width: auto;
+	height: 100px;
+	background-image: url('test.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 450px;
+
+
+
+}
+
+#logo{
+	margin-top: 5px;
+	height: 35px;
+	width: 150px;
+	float: left;
+	background-color: green;
+	margin: 10px;
+	
+}
+
+#logo img{
+	width: 150px;
+	height: 40px;
+	float: left;
+}
+
+
+input{
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 600px;
+}
+
+#headerintro{
+	background-color: blue;
+
+
+}
+
+#categories{
+	
+
+	height: 50px;
+	width: 600px;
+	float: left;
+
+}
+
+ul #nav{
+	padding-left: 0;
+	padding-right: 40px;
+}
+ul{
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 0;
+	margin-right: 40px;
+	justify-content: flex-start;
+}
+
+li{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: white;
+	margin: 20px;
+	margin-right: 0;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #c4bcbc;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#banner{
+	width: 100%;
+	float: left;
+
+}
+
+.bannerinfo{
+	display: flex;
+	justify-content: center;
+	align-content: center; 
+	height: 40px;
+	width: 100%;
+	background-color: #232F3E;
+	color: white;
+	font-size: 24px;
+	line-height: 40px;
+
+}
+
+.artikel{
+	float: left;
+}
+
+.adventskalender{
+	padding-left: 30px;
+	float: left;
+
+}

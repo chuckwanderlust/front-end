@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traversy Examples Java</title>
+</head>
+<body>
+
+	<script>
+		
+		var number = 28;
+		var model = number%2; //modulus should give a 0 to show it is even
+
+		if (model == 0){
+			console.log("number is even")
+		} else{ console.log("number is odd")}
+
+
+		//------------------
+
+		var musicians = -4;
+
+		if (musicians <= 0){
+		    console.log("this is not a group")
+		} else if (musicians === 1){
+		   console.log("solo")
+		} else if (musicians === 2){
+		    console.log("duet")
+		} else if (musicians === 3){
+		    console.log("trio")
+		} else if (musicians === 4){
+		    console.log("quartet")
+		} else if (musicians > 4){
+		    console.log("large group")
+		} else { console.log("this aint no music")}
+
+
+		//------------
+
+		var adult = true;
+		var preorder = true;
+
+		console.log("It costs $" + (adult ? "40.00" : "20.00") + " to attend the concert. Pick up your tickets at the " + (preorder ? "will call" : "the gate") + ".");
+
+		//------------
+
+		var laugh = function(howManyHa) {
+    return "ha".repeat(howManyHa) + "!";
+};
+
+console.log(laugh(10));
+
+	</script>
+
+</body>
+</html>

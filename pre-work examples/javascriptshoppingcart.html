@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Javscript shopping cart training</title>
+</head>
+<body>
+
+	<div>
+		<ul>
+			<li><a class="add-to-cart" href="#" data-name="Apple" data-price="1.22">Apple 1.22</a></li>
+			<li><a class="add-to-cart" href="#" data-name="Banana" data-price="1.33">Banana 1.33</a></li>
+			<li><a class="add-to-cart" href="#" data-name="Shoe" data-price="22.33">Shoe 22.33</a></li>
+			<li><a class="add-to-cart"  href="#" data-name="Frisbee" data-price="5.22">Frisbee 5.22</a></li>
+		</ul>
+		<button id="clear-cart">Clear Cart</button>
+	</div>
+
+	<div>
+		<ul id="show-cart">
+			
+		</ul>
+		<div>Total Cart: <span id="total-cart"></span></div>
+
+	</div>
+
+
+<script>
+
+	//$("#total-cart").html("99.75");
+
+	$(".add-to-cart").click(function(event){
+		event.preventDefault();  //prevents normal behaviour like linking somewhere else
+		var name = $(this).attr("data-name");
+		var price = Number($(this).attr("data-price"));
+
+		addItemToCart(name, price, 1);
+		displayCart();
+
+	});
+
+	function displayCart(){
+		//console.log("****Display Cart****");
+		var cartArray = listCart();
+
+		//console.log("***count cart : "+cartArray.length);
+		var output = "";
+		for (var i in cartArray){
+			output += "<li>" + cartArray[i].name+""+cartArray[i].count+ "</li>"
+
+		}
+		$("#show-cart").html(output);
+		$("total-cart").html(totalCart());
+	}
+
+
+
+
+
+	//*******************************
+	// shopping cart functions
+
+
+/*
+	function myfunction(message,count){
+		for(var i=0; i<count; i++){
+			console.log(message);
+		}
+	}
+	//myfunction("Hello world", 4);
+	//myfunction("duude",6);
+
+	//--------console.log will not work within the function because it has already been called outside(see below)
+	function square(num){
+		return num*num;
+	}
+	console.log(square(3));
+
+	//scope example
+
+	var global= "Hello";
+
+	function myFunction(){
+
+	} */
+	
+
+
+	var cart = [];
+	var Item = function(name,price,count){
+		this.name = name
+		this.price = price
+		this.count = count
+
+	};
+
+	function addItemToCart(name, price, count){
+	 	for(var i in cart){
+	 		if (cart[i].name === name){	
+	 			cart[i].count+= count;//adds count to existing count
+	 			saveCart();
+	 			return ;
+//checks the items in the cart, if the name = name, 	the amount increases, returns the total value. if name!= name, pushes new item
+	 		}
+	 	}
+	 	var item = new Item(name, price, count);
+	 	cart.push(item);
+	 	//saveCart();  //function comes later(example)
+	 };
+
+	 saveCart();
+	/* addItemToCart("Apple", 1.22, 5);
+	 addItemToCart("Pear", 1.79, 2);
+	 addItemToCart("Apple", 1.22, 1);
+	 console.log(cart)
+	 console.log(cart[0]);
+	 console.log(cart[0].name);*/
+
+	function removeItemFromCart(name) {//  removes 1 item
+		for (var i in cart){
+			if(cart[i].name === name){
+				cart[i].count --;
+				if(cart[i].count === 0){
+					cart.splice(i, 1);  //removes at the index 1 element(in case the item = 0)
+				}
+
+				break; //or return?
+
+			}
+
+		}
+		//saveCart();
+	} 
+	/*console.log(cart[0].count);
+	removeItemFromCart("Apple");
+
+	console.log(cart[0].count);
+	console.log(cart)*/
+
+     function removeItemFromCartAll(name){ //removes all item name
+     	for(var i in cart){
+     		if(cart[i].name === name){
+     			cart.splice(i, 1);
+     			break;
+
+     		}
+     	}
+     }
+
+    /* addItemToCart("Apple", 1.22, 5);
+	 addItemToCart("Car", 500, 1);
+	 addItemToCart("Toy", 6, 2);
+
+	 console.log(cart.length);
+	 console.log(cart);
+
+	 removeItemFromCartAll("Car");
+	 console.log(cart);*/
+
+	
+
+	//function clear Cart(){
+	//	cart=[];
+	//}
+	//clearCart();
+	//console.log(cart)
+
+	function countCart() {   //returns total count
+		var totalCount = 0;  //outside for loop, must start with 0
+		for(var i in cart){
+			totalCount += cart[i].count;
+		}
+		return totalCount;
+
+	}
+	console.log(countCart());
+
+
+	function totalCart(){ 	//returns total cost
+		var totalCost = 0;
+		for (var i in cart){
+			totalCost += cart[i].price * cart[i].count;
+		}
+		return totalCost;
+	}
+
+	console.log(totalCart());
+	
+
+
+	 function listCart(){ // returns array of items
+	 		 var cartCopy = [];
+	 		 for(var i in cart){
+	 		 	var item = cart[i];
+	 		 	var itemCopy = {};
+	 		 	for(var p in item){
+	 		 		itemCopy[p] = item[p];
+				}
+				cartCopy.push(itemCopy);
+	 		 }
+	 		 //return cartCopy;
+	 		 return cart;
+		}
+		/*var array = listCart();
+		array[0].name = "Mistake"; //this happens in the copy then
+		console.log(array); // not clear about this above thing*/
+	
+		function saveCart(){
+			localStorage.setItem("shoppingCart", JSON.stringify(cart));
+		}
+
+		//localStorage.setItem("username", "Joe");
+		//localStorage.setItem("age",33);  //look at console under "resources" then under local storage. should be visible
+
+	 function loadCart(){
+	 	cart = JSON.parse(localStorage.getItem("shoppingCart"));
+
+	 }
+
+	 displayCart();
+	 loadCart();
+
+	 var array = listCart();
+	 console.log(array);
+
+
+	/*var brush = new Item("Brush", 1.99, 1); //{name:"", price:0.00, count:0}
+	cart.push(new Item("Apple", 2.13, 1));
+	cart.push(brush)
+
+	console.log(cart);*/
+
+
+</script>
+	
+</body>
+</html>
+
+

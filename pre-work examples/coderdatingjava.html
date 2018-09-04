@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>coder dating js</title>
+
+
+	<style type="text/css">
+		img{
+			width: 20%;
+			height: 30%;
+		}
+
+		/*#person1, #person2{
+			display: flex;
+			flex-flow: row;*/
+
+		
+
+	</style>
+</head>
+<body>
+
+	<div class="person" id="person1"><div id="img1"></div></div>
+	<div class="person" id="person2"></div>
+	<div class="person" id="person3"></div>
+	<div class="person" id="person4"></div>
+
+	<input type="button" onclick="like()" value="like"></button>
+	<p id="numberlike"></p>
+
+
+	<script type="text/javascript">
+		
+		var i=0;
+
+		function like(){
+			i++;
+			document.getElementById("numberlike").innerHTML=+i;
+		}
+
+
+
+/*
+		function like(){
+			document.write("i am liked");
+		}
+		getElementById("numberlike").innerHTML = like();
+
+		
+		
+		var person1 = {
+			firstname: "John",
+			lastname: "Doe",
+			age: 25,
+			image: "boy1.jpg"
+
+		};
+
+		var person2 = {
+			firstname: "Jane",
+			lastname: "Doe",
+			age: 25,
+			image: "boy2.jpg"
+
+		};
+
+		var person3 = {
+			firstname: "Maxina",
+			lastname: "Musterman",
+			age: 25,
+			image: "boy1.jpg"
+
+		};
+
+		var person4 = {
+			firstname: "Max",
+			lastname: "Musterman",
+			age: 25,
+			image: "boy2.jpg"
+
+		};*/
+
+		var Persons = [
+		{
+			firstname: "John",
+			lastname: "Doe",
+			age: 25,
+			myPhoto: "boy1.jpg"
+
+		},
+
+		{
+			firstname: "Jane",
+			lastname: "Doe",
+			age: 25,
+			myPhoto: "boy2.jpg"
+
+		},
+
+		{
+			firstname: "Maxina",
+			lastname: "Musterman",
+			age: 25,
+			myPhoto: "boy1.jpg"
+
+		},
+
+		{
+			firstname: "Max",
+			lastname: "Musterman",
+			age: 25,
+			myPhoto: "boy2.jpg"
+
+		}
+
+		];
+
+		/*for (var i=0; i < Persons.length; i++){
+			document.write("<div id=\"person2\">")
+			document.write(   '<img src="' + Persons[i].myPhoto  + '">' + '<br>');
+			document.write(          Persons[i].firstname  + " " + Persons[i].lastname            + "<br>");
+		document.write(  "<b> age </b>" + Persons[i].age +  "<br>");
+		// <img src=".....">
+		
+		}*/
+
+
+
+		document.getElementById("person1").innerHTML = 
+				"Name: " + "<b>" + Persons[0].firstname + "</b>"	+
+				"<br>" 												+	
+				"Surname: " +"<b>" + Persons[0].lastname + "</b>"	+ 
+				"<br>"												+
+				"Age: " + "<b>" + Persons[0].age+ "</b>"			+
+				"<br>"+"<br>";
+
+		document.getElementById("person2").innerHTML = 
+				"Name: " + "<b>" + Persons[1].firstname + "</b>"	+
+				"<br>" 												+	
+				"Surname: " +"<b>" + Persons[1].lastname + "</b>"	+ 
+				"<br>"												+
+				"Age: " + "<b>" + Persons[1].age+ "</b>"			+
+				"<br>"+"<br>";
+
+		document.getElementById("person3").innerHTML = 
+				"Name: " + "<b>" + Persons[2].firstname + "</b>"	+
+				"<br>" 												+	
+				"Surname: " +"<b>" + Persons[2].lastname + "</b>"	+ 
+				"<br>"												+
+				"Age: " + "<b>" + Persons[2].age+ "</b>"			+
+				"<br>"+"<br>";
+
+		document.getElementById("person4").innerHTML = 
+				"Name: " + "<b>" + Persons[3].firstname + "</b>"	+
+				"<br>" 												+	
+				"Surname: " +"<b>" + Persons[3].lastname + "</b>"	+ 
+				"<br>"												+
+				"Age: " + "<b>" + Persons[3].age+ "</b>"			+
+				"<br>"+"<br>";
+		
+
+		document.write("<div id=\"img1\">")
+			document.write(   '<img src="' + Persons[0].myPhoto  + '">' + '<br>');
+			document.write(          Persons[0].firstname  + " " + Persons[0].lastname            + "<br>");
+/*
+		document.write("<div id=\"person2\">")
+			document.write(   '<img src="' + Persons[1].myPhoto  + '">' + '<br>');
+			document.write(          Persons[1].firstname  + " " + Persons[1].lastname            + "<br>");
+
+			document.write("<div id=\"person3\">")
+			document.write(   '<img src="' + Persons[2].myPhoto  + '">' + '<br>');
+			document.write(          Persons[2].firstname  + " " + Persons[2].lastname            + "<br>");
+*/
+
+
+
+
+	</script>
+	
+</body>
+</html>

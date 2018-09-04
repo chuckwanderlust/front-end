@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<p id="intro">This is the intro</p>
+
+	</header>
+	<p id="beginning"><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sint.</h1></p>
+	
+	<article>
+		<p class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, veritatis aut perspiciatis pariatur tempora blanditiis corrupti cum reiciendis voluptates harum, dolorum ratione ipsam ipsum libero. Amet, autem commodi modi vero.
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit debitis molestiae nihil, labore, rerum explicabo perspiciatis. Ipsum modi non possimus.
+			</div></p>
+
+	</article>
+
+	<section id="sectioninfo"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ab veritatis, harum. Possimus ea, expedita nam qui!</p>
+		<p>Lorem ipsum dolor sit amet, <h1>consectetur adipisicing elit.</h1> Fuga dolor eum, sunt illo ratione voluptas. Tenetur vel quos labore! Hic!</p>
+	</section>
+
+	<p><a href="http://google.com">Google</a>
+		<a href="http://yahoo.com">Yahoo</a></p>
+		<ul>
+			<li>lorem</li>
+			<li>lorem</li>
+			<li>lorem</li>
+			<li>lorem</li>
+		</ul>
+
+		<p>final Lorem ipsum dolor <h2>sit amet, consectetur adipisicing elit.</h2> Sed reiciendis omnis veritatis non nobis recusandae exercitationem id quia nemo perferendis.</p>
+
+
+<script>
+
+	//$('*').hide()
+	$("h1").css("color", "red")
+	$("h1").css("text-decoration", "underline")
+	$("li:eq(1)").css("background-color", "yellow")
+	$("li:first").css("background-color", "blue")
+	$("[href]").css("background-color", "green")
+	$("article>p").css("background-color", "green")
+	$("p:contains(second)").css("background-color", "red")
+</script>
+
+
+</body>
+</html>
